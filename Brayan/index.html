@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currículo - Brayan Oliveira</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f8fafc;
+            color: #334155;
+        }
+        
+        .profile-pic {
+            border: 4px solid #3b82f6;
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+        }
+        
+        .section-title {
+            position: relative;
+            padding-bottom: 0.5rem;
+        }
+        
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 60px;
+            height: 3px;
+            background-color: #3b82f6;
+        }
+        
+        .skill-level {
+            height: 8px;
+            border-radius: 4px;
+            background-color: #e2e8f0;
+        }
+        
+        .skill-level-fill {
+            height: 100%;
+            border-radius: 4px;
+            background-color: #3b82f6;
+        }
+        
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 15px;
+            height: 15px;
+            border-radius: 50%;
+            background-color: #3b82f6;
+        }
+    </style>
+</head>
+<body class="max-w-4xl mx-auto my-8 px-4 sm:px-6 lg:px-8">
+    <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+        <!-- Header -->
+        <div class="bg-gradient-to-r from-blue-500 to-blue-700 text-white p-6 sm:p-8">
+            <div class="flex flex-col sm:flex-row items-center">
+                <div class="mb-4 sm:mb-0 sm:mr-6">
+                    <img src="imagens/brayan.png" alt="Foto profissional de Brayan Oliveira, homem jovem de pele clara, cabelos castanhos curtos, usando camisa social azul e sorrindo levemente" class="rounded-full profile-pic w-24 h-24 sm:w-32 sm:h-32">
+                </div>
+                <div class="text-center sm:text-left">
+                    <h1 class="text-2xl sm:text-3xl font-bold">BRAYAN OLIVEIRA</h1>
+                    <p class="text-blue-100 mt-1">Técnico em Tecnologia da Informação</p>
+                    <div class="mt-3 flex flex-col sm:flex-row sm:items-center sm:space-x-4 text-sm">
+                        <div class="flex items-center mb-2 sm:mb-0">
+                            <svg class="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 20 20"><path d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z"/></svg>
+                            <span>Planaltina, DF</span>
+                        </div>
+                        <div class="flex items-center mb-2 sm:mb-0">
+                            <svg class="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 20 20"><path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"/></svg>
+                            <span>(61) 9 9557-7468</span>
+                        </div>
+                        <div class="flex items-center">
+                            <svg class="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 20 20"><path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"/><path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"/></svg>
+                            <span>brayanoliveiramarlins@gmail.com</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Main Content -->
+        <div class="p-6 sm:p-8 grid grid-cols-1 lg:grid-cols-3 gap-8">
+            <!-- Left Column -->
+            <div class="lg:col-span-2">
+                <!-- Profissional Summary -->
+                <div class="mb-8">
+                    <h2 class="section-title text-xl font-bold mb-4">RESUMO PROFISSIONAL</h2>
+                    <p class="text-slate-700">
+                        Profissional em Tecnologia da Informação com formação técnica e experiência em ambientes de produção. 
+                        Habilidade em programação, design web e operação de microcomputadores, com destaque para linguagens 
+                        como C, C++, HTML e JavaScript. Comprometido com soluções tecnológicas inovadoras e apaixonado por 
+                        desenvolvimento de sistemas e robótica. Busco oportunidade para aplicar meus conhecimentos e crescer 
+                        profissionalmente na área de TI.
+                    </p>
+                </div>
+
+                <!-- Experiência Profissional -->
+                <div class="mb-8">
+                    <h2 class="section-title text-xl font-bold mb-4">EXPERIÊNCIA PROFISSIONAL</h2>
+                    <div class="space-y-6">
+                        <div class="relative pl-6 timeline-item">
+                            <div class="absolute left-0 top-0 h-full w-px bg-gray-200 ml-[7px]"></div>
+                            <div class="space-y-1">
+                                <h3 class="font-bold text-lg">Auxiliar de Produção</h3>
+                                <div class="flex flex-col sm:flex-row sm:items-center sm:space-x-4 text-sm text-slate-600">
+                                    <span class="font-medium">Rainha Alimentos</span>
+                                    <span>•</span>
+                                    <span>Planaltina, DF</span>
+                                    <span>•</span>
+                                    <span>Jan/2025 - Atual</span>
+                                </div>
+                                <ul class="mt-2 space-y-2 text-slate-700 list-disc list-inside">
+                                    <li>Responsável pela organização do ambiente de trabalho, contribuindo para aumento de 15% na eficiência operacional</li>
+                                    <li>Atuação no controle de qualidade na embalagem de produtos, reduzindo reclamações em 10%</li>
+                                    <li>Operação de máquinas e equipamentos visando cumprimento de metas de produção</li>
+                                    <li>Trabalho em equipe para atingir objetivos de produção diários</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Formação Acadêmica -->
+                <div class="mb-8">
+                    <h2 class="section-title text-xl font-bold mb-4">FORMAÇÃO ACADÊMICA</h2>
+                    <div class="relative pl-6 timeline-item">
+                        <div class="absolute left-0 top-0 h-full w-px bg-gray-200 ml-[7px] -translate-y-3"></div>
+                        <div class="space-y-1">
+                            <h3 class="font-bold text-lg">Curso Técnico em Tecnologia da Informação</h3>
+                            <div class="flex flex-col sm:flex-row sm:items-center sm:space-x-4 text-sm text-slate-600">
+                                <span class="font-medium">CED Stella dos Querubins Guimarães Trois</span>
+                                <span>•</span>
+                                <span>Planaltina, DF</span>
+                                <span>•</span>
+                                <span>Concluído em Dez/2023</span>
+                            </div>
+                            <div class="mt-3">
+                                <h4 class="font-medium text-slate-800 mb-2">Principais Competências Desenvolvidas:</h4>
+                                <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                                    <div class="flex items-center">
+                                        <svg class="w-4 h-4 mr-2 text-blue-500" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
+                                        <span>Banco de Dados</span>
+                                    </div>
+                                    <div class="flex items-center">
+                                        <svg class="w-4 h-4 mr-2 text-blue-500" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
+                                        <span>Linguagens: C, C++, HTML, JavaScript</span>
+                                    </div>
+                                    <div class="flex items-center">
+                                        <svg class="w-4 h-4 mr-2 text-blue-500" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
+                                        <span>Design Web</span>
+                                    </div>
+                                    <div class="flex items-center">
+                                        <svg class="w-4 h-4 mr-2 text-blue-500" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
+                                        <span>Redes de Computadores</span>
+                                    </div>
+                                    <div class="flex items-center">
+                                        <svg class="w-4 h-4 mr-2 text-blue-500" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
+                                        <span>Operação de Microcomputadores</span>
+                                    </div>
+                                    <div class="flex items-center">
+                                        <svg class="w-4 h-4 mr-2 text-blue-500" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
+                                        <span>Robótica</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Column -->
+            <div class="space-y-8">
+                <!-- Habilidades Técnicas -->
+                <div>
+                    <h2 class="section-title text-xl font-bold mb-4">HABILIDADES TÉCNICAS</h2>
+                    <div class="space-y-4">
+                        <div>
+                            <div class="flex justify-between mb-1">
+                                <span class="font-medium">HTML/CSS</span>
+                                <span class="text-sm text-slate-600">Intermediário</span>
+                            </div>
+                            <div class="skill-level">
+                                <div class="skill-level-fill w-3/4"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between mb-1">
+                                <span class="font-medium">JavaScript</span>
+                                <span class="text-sm text-slate-600">Intermediário</span>
+                            </div>
+                            <div class="skill-level">
+                                <div class="skill-level-fill w-2/4"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between mb-1">
+                                <span class="font-medium">C/C++</span>
+                                <span class="text-sm text-slate-600">Intermediário</span>
+                            </div>
+                            <div class="skill-level">
+                                <div class="skill-level-fill w-2/4"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between mb-1">
+                                <span class="font-medium">Banco de Dados</span>
+                                <span class="text-sm text-slate-600">Básico</span>
+                            </div>
+                            <div class="skill-level">
+                                <div class="skill-level-fill w-1/3"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between mb-1">
+                                <span class="font-medium">Redes</span>
+                                <span class="text-sm text-slate-600">Básico</span>
+                            </div>
+                            <div class="skill-level">
+                                <div class="skill-level-fill w-1/3"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Habilidades Comportamentais -->
+                <div>
+                    <h2 class="section-title text-xl font-bold mb-4">HABILIDADES COMPORTAMENTAIS</h2>
+                    <div class="space-y-3">
+                        <div class="flex items-center">
+                            <svg class="w-4 h-4 mr-2 text-blue-500" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
+                            <span>Trabalho em equipe</span>
+                        </div>
+                        <div class="flex items-center">
+                            <svg class="w-4 h-4 mr-2 text-blue-500" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
+                            <span>Comunicação eficaz</span>
+                        </div>
+                        <div class="flex items-center">
+                            <svg class="w-4 h-4 mr-2 text-blue-500" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
+                            <span>Resolução de problemas</span>
+                        </div>
+                        <div class="flex items-center">
+                            <svg class="w-4 h-4 mr-2 text-blue-500" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
+                            <span>Adaptabilidade</span>
+                        </div>
+                        <div class="flex items-center">
+                            <svg class="w-4 h-4 mr-2 text-blue-500" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
+                            <span>Ética profissional</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Idiomas -->
+                <div>
+                    <h2 class="section-title text-xl font-bold mb-4">IDIOMAS</h2>
+                    <div class="space-y-3">
+                        <div>
+                            <div class="flex justify-between mb-1">
+                                <span class="font-medium">Português</span>
+                                <span class="text-sm text-slate-600">Nativo</span>
+                            </div>
+                            <div class="skill-level">
+                                <div class="skill-level-fill w-full"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between mb-1">
+                                <span class="font-medium">Inglês</span>
+                                <span class="text-sm text-slate-600">Pré-Intermediário (B1)</span>
+                            </div>
+                            <div class="skill-level">
+                                <div class="skill-level-fill w-1/3"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Certificações -->
+                <div>
+                    <h2 class="section-title text-xl font-bold mb-4">CERTIFICAÇÕES</h2>
+                    <p class="text-slate-700 italic">Técnico em informática para internet</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="bg-gray-50 px-6 py-4 text-center text-sm text-slate-500">
+            <p>Desenvolvido com HTML, CSS e Tailwind CSS - Atualizado em 2024</p>
+        </div>
+    </div>
+</body>
+</html>
